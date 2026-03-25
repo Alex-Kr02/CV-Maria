@@ -36,10 +36,7 @@ export default function Home() {
            className="w-full max-w-7xl"
         >
         <nav className="glass flex w-full items-center justify-between relative rounded-full px-4 sm:px-8 py-2.5 sm:py-4 shadow-xl border border-white/10 bg-[#0a0a0c]/80 backdrop-blur-xl gap-2 sm:gap-4 overflow-hidden">
-          <div className="flex items-center shrink-0">
-            <span className="inline-block font-[family-name:var(--font-playfair)] text-lg sm:text-2xl font-bold bg-linear-to-r from-orange-400 via-pink-500 to-purple-500 bg-clip-text text-transparent italic tracking-tighter py-1 pr-2 sm:pr-4">Maria.M</span>
-          </div>
-          <div className="flex items-center space-x-5 sm:space-x-8 text-[10px] sm:text-sm font-medium uppercase tracking-widest overflow-x-auto no-scrollbar scroll-smooth whitespace-nowrap px-2 flex-1 justify-start md:justify-center mask-fade-edges">
+          <div className="flex items-center space-x-5 sm:space-x-8 text-[11px] sm:text-sm font-medium uppercase tracking-widest overflow-x-auto no-scrollbar scroll-smooth whitespace-nowrap px-2 flex-1 justify-center mask-fade-edges">
             <a href="#about" className="hover:text-accent transition-colors">About</a>
             <a href="#experience" className="hover:text-accent transition-colors">Experience</a>
             <a href="#education" className="hover:text-accent transition-colors">Education</a>
@@ -114,6 +111,12 @@ export default function Home() {
                 {/* Decorative Elements */}
                 <div className="absolute -bottom-6 -left-6 h-16 w-16 rounded-full border border-accent/20 bg-accent/10 blur-xl"></div>
                 <div className="absolute -top-6 -right-6 h-32 w-32 rounded-full border border-blue-400/20 bg-blue-500/5 blur-2xl opacity-20"></div>
+              </div>
+              {/* Branded Logo Name under Photo */}
+              <div className="mt-8 text-center">
+                <span className="inline-block font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl lg:text-6xl font-bold bg-linear-to-r from-orange-400 via-pink-500 to-purple-500 bg-clip-text text-transparent italic tracking-tighter py-2">
+                  Maria.M
+                </span>
               </div>
             </motion.div>
           </div>
