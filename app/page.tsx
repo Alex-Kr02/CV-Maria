@@ -114,7 +114,7 @@ export default function Home() {
               </div>
               {/* Branded Logo Name under Photo */}
               <div className="mt-8 text-center">
-                <span className="inline-block font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl lg:text-6xl font-bold bg-linear-to-r from-orange-400 via-pink-500 to-purple-500 bg-clip-text text-transparent italic tracking-tighter py-2">
+                <span className="inline-block font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl lg:text-6xl font-bold bg-linear-to-r from-orange-400 via-pink-500 to-purple-500 bg-clip-text text-transparent italic tracking-tighter py-2 pr-10">
                   Maria.M
                 </span>
               </div>
