@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
 import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
 
@@ -13,9 +13,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
-  title: "Alex.Dev | Portfolio",
-  description: "Senior Full Stack Engineering Portfolio",
+  title: "Maria | Marketing Portfolio",
+  description: "Strategic Marketing and Social Media Management Portfolio",
 };
 
 export default function RootLayout({
@@ -26,15 +31,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col relative text-foreground antialiased bg-black">
-        {/* Background Layer */}
-        <div className="fixed inset-0 z-[-1]">
-          <div className="absolute inset-0 bg-[url('/bg-network.jpg')] bg-cover bg-center bg-no-repeat opacity-40 mix-blend-screen"></div>
-          {/* Subtle gradient to ensure text readability */}
-          <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background/95"></div>
-        </div>
+      <body className="min-h-full flex flex-col relative text-foreground antialiased bg-[#0a0a0c]">
         
         <SmoothScroll>{children}</SmoothScroll>
       </body>
