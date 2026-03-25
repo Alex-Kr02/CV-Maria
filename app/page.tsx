@@ -39,7 +39,7 @@ export default function Home() {
           <div className="flex items-center shrink-0">
             <span className="inline-block font-[family-name:var(--font-playfair)] text-lg sm:text-2xl font-bold bg-linear-to-r from-orange-400 via-pink-500 to-purple-500 bg-clip-text text-transparent italic tracking-tighter py-1 pr-2 sm:pr-4">Maria.M</span>
           </div>
-          <div className="flex items-center space-x-5 sm:space-x-8 text-[10px] sm:text-sm font-medium uppercase tracking-widest overflow-x-auto no-scrollbar scroll-smooth whitespace-nowrap px-2 flex-1 justify-center mask-fade-edges">
+          <div className="flex items-center space-x-5 sm:space-x-8 text-[10px] sm:text-sm font-medium uppercase tracking-widest overflow-x-auto no-scrollbar scroll-smooth whitespace-nowrap px-2 flex-1 justify-start md:justify-center mask-fade-edges">
             <a href="#about" className="hover:text-accent transition-colors">About</a>
             <a href="#experience" className="hover:text-accent transition-colors">Experience</a>
             <a href="#education" className="hover:text-accent transition-colors">Education</a>
