@@ -35,18 +35,18 @@ export default function Home() {
            transition={{ duration: 0.8, ease: "easeOut" }}
            className="w-full max-w-7xl"
         >
-        <nav className="glass flex w-full items-center justify-between relative rounded-full px-4 sm:px-8 py-4 shadow-xl border border-white/5">
-          <div className="flex items-center">
-            <span className="inline-block font-[family-name:var(--font-playfair)] text-xl sm:text-2xl font-bold bg-linear-to-r from-orange-400 via-pink-500 to-purple-500 bg-clip-text text-transparent italic tracking-tighter py-2 pr-4">Maria.M</span>
+        <nav className="glass flex w-full items-center justify-between relative rounded-full px-4 sm:px-8 py-3 sm:py-4 shadow-xl border border-white/10 bg-[#0a0a0c]/80 backdrop-blur-xl">
+          <div className="flex items-center shrink-0">
+            <span className="inline-block font-[family-name:var(--font-playfair)] text-xl sm:text-2xl font-bold bg-linear-to-r from-orange-400 via-pink-500 to-purple-500 bg-clip-text text-transparent italic tracking-tighter py-1 pr-4">Maria.M</span>
           </div>
-          <div className="flex space-x-4 sm:space-x-8 text-[10px] sm:text-sm font-medium uppercase tracking-[0.2em] sm:tracking-widest overflow-x-auto no-scrollbar scroll-smooth whitespace-nowrap px-4 sm:px-0">
+          <div className="hidden md:flex items-center space-x-8 text-sm font-medium uppercase tracking-widest">
             <a href="#about" className="hover:text-accent transition-colors">About</a>
             <a href="#experience" className="hover:text-accent transition-colors">Experience</a>
             <a href="#education" className="hover:text-accent transition-colors">Education</a>
-            <a href="#contact" className="hidden sm:inline-block hover:text-accent transition-colors">Contact</a>
+            <a href="#contact" className="hover:text-accent transition-colors">Contact</a>
           </div>
-          <div className="flex items-center">
-            <a href="#contact" className="gradient-blue rounded-full px-3 sm:px-5 py-1.5 sm:py-2 text-[10px] sm:text-sm font-bold text-white shadow-lg shadow-blue-500/20 hover:scale-105 active:scale-95 transition-all whitespace-nowrap">
+          <div className="flex items-center gap-4">
+            <a href="#contact" className="gradient-blue rounded-full px-4 sm:px-6 py-2 text-[11px] sm:text-sm font-bold text-white shadow-lg shadow-blue-500/20 hover:scale-105 active:scale-95 transition-all whitespace-nowrap">
               Hire Me
             </a>
           </div>
@@ -65,24 +65,24 @@ export default function Home() {
         >
           <div className="flex flex-col-reverse items-start gap-12 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-3xl">
-              <motion.h1 variants={fadeUp} className="mb-8 text-5xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl leading-tight">
-                <span className="inline-block font-[family-name:var(--font-playfair)] bg-linear-to-r from-orange-400 via-yellow-400 via-pink-500 to-purple-500 bg-clip-text text-transparent italic leading-tight py-4 pr-6">Marketing Manager</span> 
-                <span className="inline-block font-[family-name:var(--font-playfair)] text-3xl sm:text-4xl bg-linear-to-r from-orange-400 via-pink-500 to-purple-500 bg-clip-text text-transparent mt-4 font-bold leading-relaxed py-4 pr-6">& Social Media Specialist</span>
+              <motion.h1 variants={fadeUp} className="mb-6 sm:mb-8 text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight">
+                <span className="inline-block font-[family-name:var(--font-playfair)] bg-linear-to-r from-orange-400 via-yellow-400 via-pink-500 to-purple-500 bg-clip-text text-transparent italic leading-tight py-2 sm:py-4 pr-6">Marketing Manager</span> 
+                <span className="block font-[family-name:var(--font-playfair)] text-2xl sm:text-4xl bg-linear-to-r from-orange-400 via-pink-500 to-purple-500 bg-clip-text text-transparent mt-2 sm:mt-4 font-bold leading-relaxed py-2 sm:py-4 pr-6 underline-offset-8">& Social Media Specialist</span>
               </motion.h1>
-              <motion.p variants={fadeUp} className="mb-10 text-xl leading-relaxed text-muted max-w-2xl">
+              <motion.p variants={fadeUp} className="mb-8 sm:mb-10 text-lg sm:text-xl leading-relaxed text-muted max-w-2xl">
                 Strategic marketing leader with a passion for building brands and 
                 driving engagement across digital platforms. Specializing in 
                 growth strategy, content creation, and team leadership.
               </motion.p>
-              <motion.div variants={fadeUp} className="flex flex-wrap gap-4">
-                <a href="#contact" className="gradient-blue rounded-full px-10 py-4 font-bold text-white shadow-lg shadow-blue-500/20 hover:scale-105 active:scale-95 transition-all">
+              <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4">
+                <a href="#contact" className="gradient-blue rounded-full px-10 py-4 font-bold text-white shadow-lg shadow-blue-500/20 hover:scale-105 active:scale-95 transition-all text-center">
                   Get In Touch
                 </a>
                 <a 
                   href="https://www.linkedin.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="glass-blue rounded-full px-8 py-4 font-bold text-white hover:bg-white/10 transition-all flex items-center gap-3 border border-white/5"
+                  className="glass-blue rounded-full px-8 py-4 font-bold text-white hover:bg-white/10 transition-all flex items-center justify-center gap-3 border border-white/5"
                 >
                   <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
