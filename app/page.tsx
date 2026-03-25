@@ -35,15 +35,15 @@ export default function Home() {
            transition={{ duration: 0.8, ease: "easeOut" }}
            className="w-full max-w-7xl"
         >
-        <nav className="glass flex w-full items-center justify-between relative rounded-full px-4 sm:px-8 py-2.5 sm:py-4 shadow-xl border border-white/10 bg-[#0a0a0c]/80 backdrop-blur-xl gap-2 sm:gap-4 overflow-hidden">
-          <div className="flex items-center space-x-5 sm:space-x-8 text-[11px] sm:text-sm font-medium uppercase tracking-widest overflow-x-auto no-scrollbar scroll-smooth whitespace-nowrap px-2 flex-1 justify-center mask-fade-edges">
+        <nav className="glass flex w-full items-center justify-between relative rounded-full px-4 sm:px-8 py-2.5 sm:py-4 shadow-xl border border-white/10 bg-[#0a0a0c]/80 backdrop-blur-xl gap-2 sm:gap-4">
+          <div className="flex items-center space-x-3 sm:space-x-8 text-[9.5px] sm:text-sm font-bold uppercase tracking-widest flex-1 justify-center sm:justify-center">
             <a href="#about" className="hover:text-accent transition-colors">About</a>
             <a href="#experience" className="hover:text-accent transition-colors">Experience</a>
             <a href="#education" className="hover:text-accent transition-colors">Education</a>
             <a href="#contact" className="hover:text-accent transition-colors">Contact</a>
           </div>
           <div className="flex items-center shrink-0">
-            <a href="#contact" className="gradient-blue rounded-full px-3.5 sm:px-6 py-2 text-[10px] sm:text-sm font-bold text-white shadow-lg shadow-blue-500/20 hover:scale-105 active:scale-95 transition-all whitespace-nowrap">
+            <a href="#contact" className="gradient-blue rounded-full px-3 sm:px-6 py-2 text-[10px] sm:text-sm font-bold text-white shadow-lg shadow-blue-500/20 hover:scale-105 active:scale-95 transition-all whitespace-nowrap">
               Hire Me
             </a>
           </div>
